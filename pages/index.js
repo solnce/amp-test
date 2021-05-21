@@ -43,13 +43,90 @@ const Index = () => (
             }}
           />
         </div>
-        <style jsx>
+        <style jsx global>
           {`
+            @font-face {
+              font-family: icon;
+              src: url(http://localhost:3000/icon.ttf?r5m4zg=)
+                  format("truetype"),
+                url(http://localhost:3000/icon.woff?r5m4zg=)
+                  format("woff"),
+                url(http://localhost:3000/icon.svg?r5m4zg=#icon)
+                  format("svg");
+              font-weight: 400;
+              font-style: normal;
+              font-display: block;
+            }
+            [class*=" icon-"],
+            [class^="icon-"] {
+              font-family: icon;
+              speak: never;
+              font-style: normal;
+              font-weight: 400;
+              font-variant: normal;
+              text-transform: none;
+              line-height: 1;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+            }
             [role="tabpanel"] {
               display: none;
             }
             [role="tabpanel"][selected] {
               display: block;
+            }
+            h1 {
+              color: red;
+            }
+            .article__quote,
+            .article__quote--cosme {
+              position: relative;
+              margin: 30px 0 30px 67px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              padding: 10px;
+              line-height: 1.8;
+            }
+            .article__quote--cosme:before,
+            .article__quote:before {
+              content: "";
+              border: 7px solid transparent;
+              border-right: 10px solid #ccc;
+              position: absolute;
+              left: -17px;
+              top: 22px;
+            }
+            .article__quote-icon {
+              position: absolute;
+              left: -60px;
+              font-size: 44px;
+              color: #aaa;
+              top: 10px;
+              line-height: 0;
+            }
+            [class*=" icon-"],
+            [class^="icon-"] {
+              font-family: icon;
+              speak: never;
+              font-style: normal;
+              font-weight: 400;
+              font-variant: normal;
+              text-transform: none;
+              line-height: 1;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+            }
+            .icon-woman:before {
+              content: "\e963";
+            }
+            .article__quote--cosme:after,
+            .article__quote:after {
+              content: "";
+              border: 7px solid transparent;
+              border-right: 10px solid #fff;
+              position: absolute;
+              left: -15px;
+              top: 22px;
             }
           `}
         </style>
