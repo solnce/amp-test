@@ -22,8 +22,6 @@ export default async (req, res) => {
     ]
   };
 
-  console.log(`response`, response)
-
   res.statusCode = 200;
   res.setHeader(
     "AMP-Access-Control-Allow-Source-Origin",
