@@ -12,34 +12,33 @@ const Index = () => (
 
       <amp-selector
         id="myTabs"
-        class="tabs-with-flex"
         role="tablist"
-        keyboard-select-mode="focus"
       >
         <div
-          id="sample2-tabpanel1"
           role="tabpanel"
-          aria-labelledby="sample2-tab1"
           option="0"
           selected
         >
-          Tab one content...{" "}
+          <div>
+            hogehoge
+
+            <img src="" alt="" />
+
+          </div>
         </div>
         <div
-          id="sample2-tabpanel2"
           role="tabpanel"
-          aria-labelledby="sample2-tab2"
-          option="1"
+          option="hoge"
         >
           <div
             dangerouslySetInnerHTML={{
               __html: `
-    <amp-list width="auto" height="1000" layout="fixed-height" src="/api/hello">
-      <template type="amp-mustache">
-        {{{body}}}
-      </template>
-    </amp-list>
-    `,
+                <amp-list width="auto" height="1000" layout="fixed-height" src="/api/hello">
+                  <template type="amp-mustache">
+                    {{{body}}}
+                  </template>
+                </amp-list>
+              `,
             }}
           />
         </div>
