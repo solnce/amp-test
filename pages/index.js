@@ -26,6 +26,7 @@ const Index = () => (
             </div>
           </div>
           <div role="tabpanel" option="1">
+            <div class="article__embed"><amp-instagram data-shortcode="Bm2E90onI7k" width="1" height="1" layout="responsive" class="i-amphtml-layout-responsive i-amphtml-layout-size-defined" i-amphtml-layout="responsive"><i-amphtml-sizer style="display:block;padding-top:100%"></i-amphtml-sizer></amp-instagram></div>
             <amp-list class="item-list-list" layout="flex-item" src="/api/hello" items="data" single-item>
               <template type="amp-mustache">
                 {{#body}}
