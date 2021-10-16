@@ -4,7 +4,7 @@ export const config = { amp: true };
 
 const Index = () => (
   <>
-    {/* <div>
+    <div>
       <div>
         <div
           dangerouslySetInnerHTML={{
@@ -4897,7 +4897,7 @@ const Index = () => (
           display: block;
         }
       `}
-    </style> */}
+    </style>
   </>
 );
 
