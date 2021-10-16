@@ -7,17 +7,17 @@ export default class commonDocument extends Document {
     return (
       <Html>
         <Head>
-          <script
+          {/* <script
             async
             custom-element="amp-analytics"
             src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
-          />
+          /> */}
         </Head>
         <body>
-          <amp-analytics
+          {/* <amp-analytics
             config={`https://www.googletagmanager.com/amp.json?id=GTM-M9L7ZJB&gtm.url=SOURCE_URL`}
             data-credentials="include"
-          />
+          /> */}
           <Main />
           <NextScript />
         </body>
